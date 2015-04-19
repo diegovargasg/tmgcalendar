@@ -103,6 +103,12 @@ body {
     border-bottom: 0;
   }
 }
+@media only screen and (max-width: 480px){
+    .container .jumbotron {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
 /**Grid Styles**/
 .row{
   margin: 0;
@@ -218,7 +224,8 @@ body {
   margin:0px -317px 0px 0px;
   padding-right:300px;
 }
-.mac .tmg-calendar-days{
+.mac .tmg-calendar-days,
+.mobile .tmg-calendar-days{
   margin: 0;
   padding-right: 0;
 }
@@ -287,15 +294,5 @@ body {
     .tmg-calendar-day .tmg-calendar-month span {
       line-height: 9px;
       font-size: 8px;
-    }
-}
-@media only screen and (max-width: 480px){ /**Fix for the scroll bars on mobile devices*/
-    .tmg-calendar-days{
-      margin: 0px;
-      padding-right: 0px;
-    }
-    .container .jumbotron {
-      padding-left: 15px;
-      padding-right: 15px;
     }
 }
